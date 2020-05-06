@@ -7,13 +7,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   height="1024"
-   width="1024"
-   sodipodi:docname="logo.svg"
-   id="svg208"
+   inkscape:export-ydpi="96"
+   inkscape:export-xdpi="96"
+   inkscape:export-filename="C:\Users\nlasch\OneDrive - Cornetics Ltd\Pictures\ferdi-msteams\logo.png"
+   viewBox="0 0 1024 1024"
    version="1.1"
-   viewBox="0 0 1024 1024">
+   id="svg208"
+   sodipodi:docname="logo.svg"
+   width="1024"
+   height="1024"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)">
   <metadata
      id="metadata214">
     <rdf:RDF>
@@ -22,100 +25,101 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <defs
      id="defs212" />
   <sodipodi:namedview
-     inkscape:current-layer="svg208"
-     inkscape:window-maximized="0"
-     inkscape:window-y="108"
-     inkscape:window-x="5004"
-     inkscape:cy="471.62492"
-     inkscape:cx="76.381676"
-     inkscape:zoom="0.4038086"
-     showgrid="false"
-     id="namedview210"
-     inkscape:window-height="1040"
-     inkscape:window-width="1274"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0"
-     guidetolerance="10"
-     gridtolerance="10"
-     objecttolerance="10"
-     borderopacity="1"
+     inkscape:document-rotation="0"
+     pagecolor="#ffffff"
      bordercolor="#666666"
-     pagecolor="#ffffff" />
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview210"
+     showgrid="false"
+     inkscape:zoom="0.4038086"
+     inkscape:cx="-0.38736755"
+     inkscape:cy="471.62492"
+     inkscape:window-x="4912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg208" />
   <g
-     transform="scale(32.009982)"
+     id="STYLE_COLOR"
      data-name="STYLE = COLOR"
-     id="STYLE_COLOR">
+     transform="scale(32)">
     <circle
-       fill="#7b83eb"
-       r="4.6666598"
-       cy="6.00001"
+       id="Head"
        cx="17.00001"
-       id="Head" />
+       cy="6.00001"
+       r="4.6666598"
+       fill="#7b83eb" />
     <path
-       id="path183"
+       d="M 16.66663,7 H 12.4411 q 0.01017,0.04669 0.0213,0.09326 l 0.0019,0.00781 c 0.0068,0.02857 0.0141,0.05707 0.02143,0.08551 A 4.671,4.671 0 0 0 18,10.55884 V 8.33331 A 1.33727,1.33727 0 0 0 16.66663,7 Z"
        opacity="0.1"
-       d="M 16.66663,7 H 12.4411 q 0.01017,0.04669 0.0213,0.09326 l 0.0019,0.00781 c 0.0068,0.02857 0.0141,0.05707 0.02143,0.08551 A 4.671,4.671 0 0 0 18,10.55884 V 8.33331 A 1.33727,1.33727 0 0 0 16.66663,7 Z" />
+       id="path183" />
     <path
-       id="path185"
+       d="M 15.66663,8 H 12.78271 A 4.667,4.667 0 0 0 17,10.66663 V 9.33331 A 1.33727,1.33727 0 0 0 15.66663,8 Z"
        opacity="0.2"
-       d="M 15.66663,8 H 12.78271 A 4.667,4.667 0 0 0 17,10.66663 V 9.33331 A 1.33727,1.33727 0 0 0 15.66663,8 Z" />
+       id="path185" />
     <circle
-       fill="#5059c9"
-       r="3.5"
-       cy="7.50001"
-       cx="27.5"
+       id="Head-2"
        data-name="Head"
-       id="Head-2" />
+       cx="27.5"
+       cy="7.50001"
+       r="3.5"
+       fill="#5059c9" />
     <path
-       id="path188"
+       d="m 30.49976,12 h -7.86094 a 0.63906,0.63906 0 0 0 -0.63906,0.63906 v 8.11026 A 5.12132,5.12132 0 0 0 25.966,25.8339 5.00551,5.00551 0 0 0 31.99972,20.93754 V 13.5 A 1.5,1.5 0 0 0 30.49976,12 Z"
        fill="#5059c9"
-       d="m 30.49976,12 h -7.86094 a 0.63906,0.63906 0 0 0 -0.63906,0.63906 v 8.11026 A 5.12132,5.12132 0 0 0 25.966,25.8339 5.00551,5.00551 0 0 0 31.99972,20.93754 V 13.5 A 1.5,1.5 0 0 0 30.49976,12 Z" />
+       id="path188" />
     <path
-       id="path190"
+       d="M 25,13.5 V 23 A 7.99479,7.99479 0 0 1 10.08,27 7.17277,7.17277 0 0 1 9.58,26 8.36694,8.36694 0 0 1 9.25,25 8.24022,8.24022 0 0 1 9,23 V 13.5 A 1.498,1.498 0 0 1 10.5,12 h 13 a 1.498,1.498 0 0 1 1.5,1.5 z"
        fill="#7b83eb"
-       d="M 25,13.5 V 23 A 7.99479,7.99479 0 0 1 10.08,27 7.17277,7.17277 0 0 1 9.58,26 8.36694,8.36694 0 0 1 9.25,25 8.24022,8.24022 0 0 1 9,23 V 13.5 A 1.498,1.498 0 0 1 10.5,12 h 13 a 1.498,1.498 0 0 1 1.5,1.5 z" />
+       id="path190" />
     <path
-       id="path192"
+       d="M 15.66663,8 H 12.78271 A 4.667,4.667 0 0 0 17,10.66663 V 9.33331 A 1.33727,1.33727 0 0 0 15.66663,8 Z"
        opacity="0.2"
-       d="M 15.66663,8 H 12.78271 A 4.667,4.667 0 0 0 17,10.66663 V 9.33331 A 1.33727,1.33727 0 0 0 15.66663,8 Z" />
+       id="path192" />
     <path
-       id="path194"
+       d="M 18,12 V 24.67 A 1.32024,1.32024 0 0 1 16.96,25.96 0.966,0.966 0 0 1 16.67,26 H 9.58 A 8.36694,8.36694 0 0 1 9.25,25 8.24022,8.24022 0 0 1 9,23 V 13.5 A 1.498,1.498 0 0 1 10.5,12 Z"
        opacity="0.1"
-       d="M 18,12 V 24.67 A 1.32024,1.32024 0 0 1 16.96,25.96 0.966,0.966 0 0 1 16.67,26 H 9.58 A 8.36694,8.36694 0 0 1 9.25,25 8.24022,8.24022 0 0 1 9,23 V 13.5 A 1.498,1.498 0 0 1 10.5,12 Z" />
+       id="path194" />
     <path
-       id="path196"
+       d="M 17,12 V 25.67 A 0.96746,0.96746 0 0 1 16.96,25.96 1.3203,1.3203 0 0 1 15.67,27 H 10.08 A 7.17277,7.17277 0 0 1 9.58,26 8.36694,8.36694 0 0 1 9.25,25 8.24022,8.24022 0 0 1 9,23 V 13.5 A 1.498,1.498 0 0 1 10.5,12 Z"
        opacity="0.2"
-       d="M 17,12 V 25.67 A 0.96746,0.96746 0 0 1 16.96,25.96 1.3203,1.3203 0 0 1 15.67,27 H 10.08 A 7.17277,7.17277 0 0 1 9.58,26 8.36694,8.36694 0 0 1 9.25,25 8.24022,8.24022 0 0 1 9,23 V 13.5 A 1.498,1.498 0 0 1 10.5,12 Z" />
+       id="path196" />
     <path
-       id="path198"
+       d="M 17,12 V 23.67 A 1.33588,1.33588 0 0 1 15.67,25 H 9.25 A 8.24022,8.24022 0 0 1 9,23 V 13.5 A 1.498,1.498 0 0 1 10.5,12 Z"
        opacity="0.2"
-       d="M 17,12 V 23.67 A 1.33588,1.33588 0 0 1 15.67,25 H 9.25 A 8.24022,8.24022 0 0 1 9,23 V 13.5 A 1.498,1.498 0 0 1 10.5,12 Z" />
+       id="path198" />
     <path
-       id="path200"
+       d="M 10.5,12 A 1.498,1.498 0 0 0 9,13.5 V 23 a 8.24022,8.24022 0 0 0 0.25,2 h 5.42 A 1.33588,1.33588 0 0 0 16,23.67 V 12 Z"
        opacity="0.2"
-       d="M 10.5,12 A 1.498,1.498 0 0 0 9,13.5 V 23 a 8.24022,8.24022 0 0 0 0.25,2 h 5.42 A 1.33588,1.33588 0 0 0 16,23.67 V 12 Z" />
+       id="path200" />
     <path
-       fill="#4b53bc"
-       d="M 1.33334,8 H 14.6667 A 1.33333,1.33333 0 0 1 16,9.33333 V 22.66666 A 1.33333,1.33333 0 0 1 14.6667,24 H 1.33334 A 1.33334,1.33334 0 0 1 0,22.66666 V 9.33334 A 1.33334,1.33334 0 0 1 1.33334,8 Z"
+       id="Back_Plate"
        data-name="Back Plate"
-       id="Back_Plate" />
+       d="M 1.33334,8 H 14.6667 A 1.33333,1.33333 0 0 1 16,9.33333 V 22.66666 A 1.33333,1.33333 0 0 1 14.6667,24 H 1.33334 A 1.33334,1.33334 0 0 1 0,22.66666 V 9.33334 A 1.33334,1.33334 0 0 1 1.33334,8 Z"
+       fill="#4b53bc" />
     <path
-       id="path203"
+       d="m 11.97961,12.975 h -2.9888 v 8.0203 H 7.02654 V 12.975 H 4.02042 v -1.97034 h 7.95919 z"
        fill="#ffffff"
-       d="m 11.97961,12.975 h -2.9888 v 8.0203 H 7.02654 V 12.975 H 4.02042 v -1.97034 h 7.95919 z" />
+       id="path203" />
     <rect
-       y="0"
-       x="0"
-       id="rect205"
-       fill="none"
+       width="32"
        height="32"
-       width="32" />
+       fill="none"
+       id="rect205"
+       x="0"
+       y="0" />
   </g>
 </svg>
