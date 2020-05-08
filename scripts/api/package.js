@@ -93,8 +93,8 @@ For more information about the package.json file visit https://github.com/getfer
   }
   let configErrors = [];
   if (!config.id) {
-    configErrors.push("Your package.json contains no 'id' field. This field should contain a unique ID made of lowercase letters (a-z) and hyphens (-)");
-  } else if (!/^[a-z._\-]+$/.test(config.id)) {
+    configErrors.push("Your package.json contains no 'id' field. This field should contain a unique ID made of lowercase letters (a-z), numbers (0-9), hyphens (-), periods (.), and underscores (_));
+  } else if (!/^[a-z0-9._\-]+$/.test(config.id)) {
     configErrors.push("Your package.json defines an invalid recipe ID. Please make sure the 'id' field only contains lowercase letters (a-z) and hyphens (-)");
   }
   if (!config.name) {
