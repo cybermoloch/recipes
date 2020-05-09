@@ -81,6 +81,16 @@ For more information about recipe icons visit https://github.com/getferdi/recipe
     return;
   }
 
+  const svgSize = sizeOf(svgIcon);
+  const svgHasRightSize = svgSize.width === svgSize.height;
+  if (!svgHasRightSize) {
+    console.log(`⚠️ Could not add your recipe: "icon.svg" should be a square.
+  Please make sure that your "icon.svg" has the right dimensions - width and height should be the same.
+  You can use software like Photoshop, GIMP or Photopea (https://www.photopea.com/) to resize your icons.
+  For more information about recipe icons visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);
+    return;
+  }  
+
   // Read package.json
   const config = await fs.readJson(packageJson)
 
