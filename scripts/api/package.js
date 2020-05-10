@@ -46,7 +46,7 @@ module.exports = async () => {
   if (!await fs.pathExists(packageJson)) {
     errorMessages.push(`⚠️ It looks like your recipe is missing the "package.json" file.
     ↪ Please add your recipe to ${recipeSrc} and make sure that folder contains a "package.json".
-    ℹ For more information on how to add your recipe visit https://github.com/getferdi/recipes/blob/master/docs/integration.md`);
+    ℹ For more information on how to add your recipe visit: https://github.com/getferdi/recipes/blob/master/docs/integration.md`);
   }
 
   // Check that icons exist
@@ -54,7 +54,7 @@ module.exports = async () => {
   if (!hasSvg) {
     errorMessages.push(`⚠️ It looks like your recipe is missing the "icon.svg" file.
     ↪ Please make sure your recipe contains an icon.svg file.
-    ℹ For more information about recipe icons visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);  
+    ℹ For more information about recipe icons visit: https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);  
   }
   
   const hasPng = await fs.pathExists(pngIcon);
@@ -62,7 +62,7 @@ module.exports = async () => {
     errorMessages.push(`⚠️ It looks like your recipe is missing the "icon.png" file.
     ↪ Please make sure your recipe contains an icon.png file.
     ↪ Please also make sure that your PNG icon is 1024x1024px in size.
-    ℹ For more information about recipe icons visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);
+    ℹ For more information about recipe icons visit: https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);
   }
 
   // Check that icons have the right dimensions
@@ -73,7 +73,7 @@ module.exports = async () => {
       errorMessages.push(`⚠️ It looks like your "icon.svg" is not a square.
       ↪ Please make sure that your "icon.svg" has the right dimensions to make a square- width and height should be the same.
       ℹ You can use software like Photoshop, GIMP or Photopea (https://www.photopea.com/) to resize your icons.
-      ℹ For more information about recipe icons visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);
+      ℹ For more information about recipe icons visit: https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);
     }
   }
 
@@ -84,7 +84,7 @@ module.exports = async () => {
       errorMessages.push(`⚠️ it looks like your "icon.png" is not 1024x1024 in size.
       ↪ Please make sure that your "icon.png" has the right dimeensions of 1024x1024px.
       ℹ You can use software like Photoshop, GIMP or Photopea (https://www.photopea.com/) to resize your icons.
-      ℹ For more information about recipe icons visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);
+      ℹ For more information about recipe icons visit: https://github.com/getferdi/recipes/blob/master/docs/integration.md#icons`);
     }
   }
 
@@ -95,36 +95,37 @@ module.exports = async () => {
   if (!config) {
     errorMessages.push(`⚠️ It looks like your "package.json" file could not read or parsed.
     ↪ Please make sure your "package.json" contains valid JSON.
-    ℹ For more information about the package.json file visit https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
+    ℹ You can use a JSON Validator like JSONLint: https://jsonlint.com/
+    ℹ For more information about the package.json file visit: https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
   }
   
   if (!config.id) {
     errorMessages.push(`⚠️ It looks like your "package.json" does not contain an "id" field.
     ↪ Please make sure the "id" field contains a unique ID made of lowercase letters (a-z) and hyphens (-)
-    ℹ For more information about the package.json file visit https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
+    ℹ For more information about the package.json file visit: https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
   } else if (!/^[a-z._\-]+$/.test(config.id)) {
     errorMessages.push(`⚠️ It looks like your "package.json" defines an invalid recipe ID.
     ↪ Please make sure the "id" field only contains lowercase letters (a-z) and hyphens (-)
-    ℹ For more information about the package.json file visit https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
+    ℹ For more information about the package.json file visit: https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
   }
   if (!config.name) {
     errorMessages.push(`⚠️ It looks like your "package.json" does not contain a "name" field.
     ↪ Please make sure the "name" field contains the name of the service (e.g. "Google Keep")
-    ℹ For more information about the package.json file visit https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
+    ℹ For more information about the package.json file visit: https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
   }
   if (!config.version) {
     errorMessages.push(`⚠️ It looks like your "package.json" does not contain a "version" field.
     ↪ Please make sure the "version" field contains a semver-compatible version number for your recipe (e.g. "1.0.0")
-    ℹ For more information about the package.json file visit https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
+    ℹ For more information about the package.json file visit: https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
   }
   if (!config.config || typeof config.config !== "object") {
     errorMessages.push(`⚠️ It looks like your "package.json" does not contain a "config" object.
     ↪ Please make sure the "config" object contains a configuration for your service.
-    ℹ For more information about the package.json file visit https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
+    ℹ For more information about the package.json file visit: https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
   } else if (!config.config.serviceURL) {
-    errorMessages.push(`⚠️ It looks like your "package.json" does not contain a "config" object with no "serviceURL" field.
+    errorMessages.push(`⚠️ It looks like your "package.json" does not contain a "config" object without a "serviceURL" field.
     ↪ Please make sure the "serviceURL" contains the URL of your service.
-    ℹ For more information about the package.json file visit https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
+    ℹ For more information about the package.json file visit: https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
   }
 
   // Index of the current recipe in all.json
@@ -138,19 +139,19 @@ module.exports = async () => {
     errorMessages.push(`⚠️ It looks like your recipe is using the same version number as the current recipe.
     ↪ Please make sure to increase the version number inside your "package.json" everytime you want to repackage (e.g. '1.0.0' to '1.0.1').
     ↪ If you don't increase your version number, Ferdi cannot detect that you have made changes to the recipe.
-    ℹ For more information about versioning of recipes visit https://github.com/getferdi/recipes/blob/master/docs/configuration.md#config-flags`);
+    ℹ For more information about versioning of recipes visit: https://github.com/getferdi/recipes/blob/master/docs/configuration.md#config-flags`);
     }
   }
 
   if (!await fs.exists(path.join(recipeSrc, 'webview.js'))) {
     errorMessages.push(`⚠️ It looks like your recipe doesn't contain a "webview.js" file.
     ↪ Please make sure to create that file and add your features to it.
-    ℹ For more information about the webview.js file visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#webviewjs and https://github.com/getferdi/recipes/blob/master/docs/frontend_api.md`);
+    ℹ For more information about the webview.js file visit: https://github.com/getferdi/recipes/blob/master/docs/integration.md#webviewjs and https://github.com/getferdi/recipes/blob/master/docs/frontend_api.md`);
   }
   if (!await fs.exists(path.join(recipeSrc, 'index.js'))) {
     errorMessages.push(`⚠️ It looks like your recipe doesn't contain a "index.js" file.
     ↪ Please make sure to create that file and add your features to it. For most recipes it is enough to simply add the basic template found at https://github.com/getferdi/recipes/blob/master/docs/integration.md#indexjs
-    ℹ For more information about the webview.js file visit https://github.com/getferdi/recipes/blob/master/docs/integration.md#indexjs and https://github.com/getferdi/recipes/blob/master/docs/backend_api.md`);
+    ℹ For more information about the webview.js file visit: https://github.com/getferdi/recipes/blob/master/docs/integration.md#indexjs and https://github.com/getferdi/recipes/blob/master/docs/backend_api.md`);
   }
 
   if (errorMessages.length > 0) {
