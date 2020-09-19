@@ -1,8 +1,8 @@
 {
   "id": "jitsi",
-  "name": "Jitsi",
+  "name": "Jitsi Meet",
   "version": "1.0.3",
-  "description": "Jitsi",
+  "description": "Jitsi Meet",
   "main": "index.js",
   "author": "Sampath Kumar Krishnan <sampath3493@gmail.com>",
   "license": "MIT",
