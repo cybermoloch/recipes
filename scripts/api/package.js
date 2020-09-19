@@ -101,11 +101,11 @@ module.exports = async () => {
   
   if (!config.id) {
     errorMessages.push(`⚠️ It looks like your "package.json" does not contain an "id" field.
-    ↪ Please make sure the "id" field contains a unique ID made of lowercase letters (a-z) and hyphens (-)
+    ↪ Please make sure the "id" field contains a unique ID made of lowercase letters (a-z), numbers (0-9), hyphens (-), periods (.), and underscores (_)
     ℹ For more information about the package.json file visit: https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
   } else if (!/^[a-z._\-]+$/.test(config.id)) {
     errorMessages.push(`⚠️ It looks like your "package.json" defines an invalid recipe ID.
-    ↪ Please make sure the "id" field only contains lowercase letters (a-z) and hyphens (-)
+    ↪ Please make sure the "id" field only contains lowercase letters (a-z), numbers (0-9), hyphens (-), periods (.), and underscores (_)
     ℹ For more information about the package.json file visit: https://github.com/getferdi/recipes/blob/master/docs/configuration.md`);
   }
   if (!config.name) {
@@ -171,9 +171,10 @@ ${errorMessages.reduce((str, err) => `${str}\n${err}`)}
 
   // Add recipe to all.json
   console.log('[Info] Adding to all.json');
+  const isFeatured = packageIndex !== -1 ? all[packageIndex].featured : false;
   const packageInfo = {
     "author": config.author || '',
-    "featured": false,
+    "featured": isFeatured,
     "id": config.id,
     "name": config.name,
     "version": config.version || '1.0.0',
